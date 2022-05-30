@@ -1,44 +1,53 @@
 /* Basic Style */
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
+
 li,
-h3{
-  list-style:none;
+h3 {
+  list-style: none;
 }
+
 input,
-button{
-  outline:none;
+button {
+  outline: none;
 }
+
 .body {
   background-color: #f8f8f8;
   color: #333;
   font-family: "Lato", sans-serif;
 }
-.header{
+
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header__img {
   width: 100%;
 }
-.header__link{
+
+.header__link {
   font-family: "Lato", sans-serif;
 }
 
 @media (max-width:768px) {
-.header  { text-align: center;
+
+.header {
+  text-align: center;
 }
+
 }
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-
 
 .add__input,
 .task__label,
@@ -49,11 +58,9 @@ button{
   width: 318px;
 }
 
-
-
 .add__btn,
 .task__edit-btn,
-.task__del-btn{
+.task__del-btn {
   background: none;
   border: 0px;
   color: #888;
@@ -62,9 +69,11 @@ button{
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
+
 .btn:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
 
 .main__title {
@@ -77,6 +86,7 @@ button{
   margin: 0 0 20px;
   text-transform: uppercase;
 }
+
 .task__text {
   display: none;
   margin: 0;
@@ -88,20 +98,23 @@ button{
   background: #FFF;
   border-radius: 6px;
   font-family: "Lato", sans-serif;
-  color: #888;  
+  color: #888;
   width: 226px;
 }
-.task__text:focus{
+
+.task__text:focus {
   color: #333;
 }
 
 /* New Task */
+
 .add__box {
   display: flex;
 }
 
 /* Task list */
-.task{
+
+.task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -114,7 +127,8 @@ button{
 .task__checkbox {
   margin: 0 10px;
 }
-.task__label{
+
+.task__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -126,11 +140,13 @@ button{
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .task__icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
+
 .complete .task__label {
   text-decoration: line-through;
   color: #888;
@@ -139,10 +155,10 @@ button{
 /* Edit Task */
 
 .editMode .task__text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px;
 }
 
 .editMode .task__label {
-  display:none;
+  display: none;
 }
