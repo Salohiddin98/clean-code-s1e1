@@ -85,8 +85,9 @@ button{
   text-transform: uppercase;
 }
 
+
+.add__input,
 .task__text {
-  display: none;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,7 +100,11 @@ button{
   color: #888;  
   width: 226px;
 }
+.task__text{
+  display: none;
+}
 
+.add__input:focus,
 .task__text:focus{
   color: #333;
 }
