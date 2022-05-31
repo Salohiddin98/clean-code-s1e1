@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="style.css" media="screen">
 </head>
 
 <body class="body">
@@ -18,10 +18,12 @@
   </header>
   <main class="main">
     <section class="add">
-      <label class="main__title" for="new-task">Add Item</label>
+      <label for="new-task">
+        <h3 class="main__title">Add Item</h3>
+      </label>
       <div class="add__box">
         <input class="add__input" id="new-task" type="text">
-        <button class="add__btn">Add</buttoncn>
+        <button class="add__btn">Add</button>
       </div>
     </section>
     <section class="todo">
