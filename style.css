@@ -5,12 +5,12 @@ ul {
 }
 
 li,
-h3{
+h3 {
   list-style: none;
 }
 
 input,
-button{
+button {
   outline: none;
 }
 
