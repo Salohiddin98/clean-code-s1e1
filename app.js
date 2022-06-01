@@ -112,6 +112,8 @@ var taskCompleted=function(){
 
   //Append the task list item to the #completed-tasks
   var listItem=this.parentNode;
+  var buttonLabel=listItem.querySelector('label.task__label');
+  buttonLabel.classList.toggle("task__label_crossed");
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
 }
@@ -143,7 +145,6 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
   var checkBox=taskListItem.querySelector('input[type=checkbox]');
   var editButton=taskListItem.querySelector('button.task__edit-btn');
   var deleteButton=taskListItem.querySelector('button.task__del-btn');
-
   //Bind editTask to edit button.
   editButton.onclick=editTask;
   //Bind deleteTask to delete button.
