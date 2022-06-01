@@ -152,7 +152,7 @@ button {
 
 /* Completed */
 
-.task__label.task__label_crossed {
+.task__label_crossed {
   text-decoration: line-through;
   color: #888;
 }
